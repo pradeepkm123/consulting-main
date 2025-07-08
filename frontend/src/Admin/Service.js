@@ -17,7 +17,7 @@ function Service() {
 
   const fetchServices = async () => {
     try {
-      const response = await fetch('https://consulting-4rbe.onrender.com/api/services');
+      const response = await fetch('https://consulting-main.onrender.com/api/services');
       if (response.ok) {
         const data = await response.json();
         setServices(Array.isArray(data) ? data : []);
@@ -43,7 +43,7 @@ function Service() {
   const handleDelete = async (serviceId) => {
     if (window.confirm('Are you sure you want to delete this service?')) {
       try {
-        const response = await fetch(`https://consulting-4rbe.onrender.com/api/services/${serviceId}`, {
+        const response = await fetch(`https://consulting-main.onrender.com/api/services/${serviceId}`, {
           method: 'DELETE',
         });
 
@@ -103,7 +103,7 @@ function Service() {
                   <td>
                     {service.imageUrl && (
                       <img
-                        src={`https://consulting-4rbe.onrender.com/${service.imageUrl}`}
+                        src={`https://consulting-main.onrender.com/${service.imageUrl}`}
                         alt={service.title}
                         style={{ width: '100px', height: 'auto' }}
                       />
@@ -112,7 +112,7 @@ function Service() {
                   <td>
                     {service.iconUrl && (
                       <img
-                        src={`https://consulting-4rbe.onrender.com/${service.iconUrl}`}
+                        src={`https://consulting-main.onrender.com/${service.iconUrl}`}
                         alt={service.title}
                         style={{ width: '50px', height: 'auto' }}
                       />
