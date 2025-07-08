@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function InternshipList() {
   const [data, setData] = useState([]);
-  const BASE_URL = 'https://consulting-4rbe.onrender.com'; // Adjust if deployed
+  const BASE_URL = 'https://consulting-main.onrender.com'; // Adjust if deployed
 
   useEffect(() => {
     const fetchData = async () => {
