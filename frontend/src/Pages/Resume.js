@@ -35,7 +35,7 @@ function Resume() {
     }
 
     try {
-      const response = await axios.post('https://consulting-4rbe.onrender.com/api/resumes', data, {
+      const response = await axios.post('https://consulting-main.onrender.com/api/resumes', data, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
