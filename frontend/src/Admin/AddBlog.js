@@ -281,8 +281,8 @@ function AddBlog({ isOpen, toggleDrawer, onBlogSubmit, blog }) {
 
     try {
       const url = blog
-        ? `https://consulting-4rbe.onrender.com/api/blogs/${blog._id}`
-        : 'https://consulting-4rbe.onrender.com/api/blogs';
+        ? `https://consulting-main.onrender.com/api/blogs/${blog._id}`
+        : 'https://consulting-main.onrender.com/api/blogs';
       const method = blog ? 'PUT' : 'POST';
       const response = await fetch(url, {
         method,
