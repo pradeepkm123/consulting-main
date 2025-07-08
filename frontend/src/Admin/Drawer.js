@@ -236,7 +236,7 @@ function Drawer({ isOpen, toggleDrawer, job, onJobSubmit }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = job ? `https://consulting-4rbe.onrender.com/api/jobs/${job._id}` : 'https://consulting-4rbe.onrender.com/api/jobs';
+      const url = job ? `https://consulting-main.onrender.com/api/jobs/${job._id}` : 'https://consulting-main.onrender.com/api/jobs';
       const method = job ? 'PUT' : 'POST';
 
       const response = await fetch(url, {
