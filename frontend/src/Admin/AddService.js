@@ -39,7 +39,7 @@ function AddService({ isOpen, toggleDrawer, onServiceSubmit, service }) {
     }
 
     try {
-      const url = service ? `https://consulting-4rbe.onrender.com/api/services/${service._id}` : 'https://consulting-4rbe.onrender.com/api/services';
+      const url = service ? `https://consulting-main.onrender.com/api/services/${service._id}` : 'https://consulting-main.onrender.com/api/services';
       const method = service ? 'PUT' : 'POST';
 
       const response = await fetch(url, {
