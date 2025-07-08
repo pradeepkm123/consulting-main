@@ -1,0 +1,69 @@
+@import "~font-awesome/css/font-awesome.min.css";
+
+
+.header-menu{
+    margin-top: -8%;
+}
+section.hero_area{
+    border-radius: 50px;
+    background-size: cover;
+}
+.header-menu ul li{
+    margin: 0 15px 0;
+}
+.category-item i {
+    font-size: 23px;
+}
+.tag-icon i{
+    font-size: 13px;
+}
+
+.client-slide{
+    justify-items: center;
+}
+.slick-slide{
+    padding: 15px;
+}
+
+@media only screen and (max-width: 747px) {
+    #mob{
+        display: none !important;
+    }
+    .hero_area {
+        margin-top: 25%;
+        padding: 30px;
+    }
+}
+
+
+.consalt-header-area{
+    margin-bottom: -150px;
+}
+
+
+.about_shape {
+    position: absolute;
+    bottom: -14%;
+    right: 2%
+}
+.service_single_item.style_two .service_thumb{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+.hero_content h4{
+    padding-left: 0px;
+}
+.mean-container .mean-bar::before{
+    content:'';
+}
+.mean-container .mean-bar{
+    background: #053131 !important;
+}

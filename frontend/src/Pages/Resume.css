@@ -1,0 +1,242 @@
+.main-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+        
+        .left-section {
+            width: 70%;
+        }
+        
+        .hero-banner {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border: 3px solid #2196f3;
+            border-radius: 8px;
+            height: 180px;
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .form-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 0;
+            position: relative;
+            width: 40%;
+            margin-left: auto;
+            margin-top: -200px;
+            z-index: 10;
+        }
+        
+        .form-header {
+            background: #063232;
+            padding: 20px 30px 15px;
+            border-radius: 12px 12px 0 0;
+            text-align: center;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .form-header h3 {
+            color: #fff;
+            font-weight: 600;
+            font-size: 20px;
+            margin: 0;
+        }
+        
+        .form-body {
+            padding: 25px 30px 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-label {
+            color: #495057;
+            font-weight: 500;
+            margin-bottom: 8px;
+            display: block;
+            font-size: 14px;
+        }
+        
+        .form-control {
+            border: 2px solid #e9ecef;
+            border-radius: 6px;
+            padding: 12px 15px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .form-control:focus {
+            border-color: #3d5afe;
+            box-shadow: 0 0 0 0.2rem rgba(61, 90, 254, 0.15);
+            outline: none;
+        }
+        
+        .file-input-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .file-input {
+            position: absolute;
+            left: -9999px;
+        }
+        
+        .file-input-label {
+            background: #f8f9fa;
+            border: 2px dashed #dee2e6;
+            border-radius: 6px;
+            color: #6c757d;
+            cursor: pointer;
+            display: block;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+        
+        .file-input-label:hover {
+            background: #e9ecef;
+            border-color: #3d5afe;
+            color: #3d5afe;
+        }
+        
+        .submit-btn {
+            background: #3d5afe;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            padding: 15px 30px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background: #304ffe;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(61, 90, 254, 0.3);
+        }
+        
+        .content-section h2 {
+            color: #dc3545;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .content-section h3 {
+            color: #1e319b;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .content-section p {
+            color: #495057;
+            line-height: 1.6;
+            font-size: 14px;
+            text-align: justify;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            .left-section{
+                width: 100% !important;
+            }
+            
+            .form-card {
+                width: 100%;
+                max-width: 500px;
+                margin: -40px auto 0;
+            }
+            
+            .hero-banner {
+                height: 150px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .main-container {
+                padding: 15px;
+                margin: 10px auto;
+            }
+            
+            .content-wrapper {
+                gap: 20px;
+            }
+            
+            .form-card {
+                margin-top: -30px;
+            }
+            
+            .form-body {
+                padding: 20px 25px 25px;
+            }
+            
+            .form-header {
+                padding: 15px 25px 12px;
+            }
+            
+            .hero-banner {
+                height: 120px;
+            }
+            
+            .content-section h3 {
+                font-size: 18px;
+            }
+            
+            .content-section h2 {
+                font-size: 16px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .main-container {
+                padding: 10px;
+            }
+            
+            .form-body {
+                padding: 15px 20px 20px;
+            }
+            
+            .form-header {
+                padding: 15px 20px 10px;
+            }
+            
+            .form-header h3 {
+                font-size: 16px;
+            }
+            
+            .hero-banner {
+                height: 100px;
+            }
+            
+            .submit-btn {
+                padding: 12px 25px;
+                font-size: 15px;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .form-card {
+                margin-left: 5px;
+                margin-right: 5px;
+                width: calc(100% - 10px);
+            }
+        }

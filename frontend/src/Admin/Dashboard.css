@@ -1,0 +1,511 @@
+.dashboard-container {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.top-controls {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.view-toggle {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 4px;
+    display: flex;
+    gap: 4px;
+}
+
+.view-btn {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: #6c757d;
+    transition: all 0.2s;
+}
+
+.view-btn.active {
+    background: white;
+    color: #495057;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    max-width: 300px;
+}
+
+.search-box input {
+    border: none;
+    background: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+}
+
+.search-box i {
+    color: #6c757d;
+}
+
+.dropdown-custom {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    min-width: 120px;
+    position: relative;
+}
+
+.dropdown-custom::after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+
+.btn-delete-product {
+    background: #AF3E3E;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+}
+
+.btn-delete-product {
+    background: #AF3E3E;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+}
+
+.btn-add-product {
+    background: #6f42c1;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+}
+
+.btn-add-product:hover {
+    background: #5a2d9c;
+    color: white;
+}
+
+.filter-section {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.filter-dropdown {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+.filter-dropdown::after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+
+.filter-btn {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    color: #495057;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.products-table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    margin: 0;
+}
+
+.table thead th {
+    background: #f8f9fa;
+    border: none;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #6c757d;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.table thead th.sortable {
+    cursor: pointer;
+}
+
+.table thead th.sortable::after {
+    content: '\f0dc';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 15px;
+    color: #adb5bd;
+    font-size: 10px;
+}
+
+.table tbody td {
+    padding: 15px;
+    border-color: #f1f3f4;
+    vertical-align: middle;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.product-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #f8f9fa;
+}
+
+.product-details h6 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #212529;
+}
+
+.product-details small {
+    color: #6c757d;
+    font-size: 12px;
+}
+
+.status-badge {
+    background: #d1ecf1;
+    color: #0c5460;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.status-badge.active {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-badge.active::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #28a745;
+    border-radius: 50%;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-edit {
+    background: #6f42c1;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-edit:hover {
+    background: #5a2d9c;
+    color: white;
+}
+
+.btn-delete {
+    background: none;
+    border: 1px solid #dee2e6;
+    color: #6c757d;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.btn-delete:hover {
+    background: #f8f9fa;
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.pagination-container {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.pagination {
+    margin: 0;
+    justify-content: center;
+}
+
+.page-link {
+    border: none;
+    color: #6c757d;
+    padding: 8px 12px;
+    margin: 0 2px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.page-link:hover {
+    background: #f8f9fa;
+    color: #495057;
+}
+
+.page-item.active .page-link {
+    background: #6f42c1;
+    border-color: #6f42c1;
+    color: white;
+    text-decoration: blink;
+}
+
+.page-item:not(:first-child) .page-link {
+    text-decoration: blink;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 10px;
+    }
+
+    .top-controls {
+        padding: 15px;
+    }
+
+    .top-controls .row {
+        gap: 15px;
+    }
+
+    .filter-section .row {
+        gap: 10px;
+    }
+
+    .table-responsive {
+        border-radius: 12px;
+    }
+
+    .table thead th,
+    .table tbody td {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    .product-info {
+        gap: 8px;
+    }
+
+    .product-image {
+        width: 32px;
+        height: 32px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+@media (max-width: 576px) {
+    .view-toggle {
+        display: none;
+    }
+
+    .search-box {
+        max-width: none;
+    }
+
+    .filter-section .row>div {
+        margin-bottom: 10px;
+    }
+}
+
+.col-auto {
+    padding-top: 30px;
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 400px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 9999;
+    overflow-x: scroll;
+}
+
+.drawer.open {
+    right: 0;
+}
+
+.drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.drawer-header h3 {
+    margin: 0;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.drawer-content {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+label {
+    color: #000;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-view {
+    border: none;
+    border-radius: 5px;
+    color: #21005e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-icon {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000;
+    /* Adjust color as needed */
+}

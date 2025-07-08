@@ -1,0 +1,416 @@
+.main-container {
+            height: 100vh;
+            display: flex;
+        }
+        
+        /* Left Section - Login Form */
+        .left-section {
+            background: #ffffff;
+            /* flex: 1; */
+            display: flex;
+            width: 40% !important;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+        
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+        }
+        
+        .logo-section {
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 30px;
+        }
+        
+        .logo-icon {
+            width: 24px;
+            height: 24px;
+            background: #1e88e5;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .logo-text {
+            color: #1e88e5;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .login-title {
+            color: #2c3e50;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .login-subtitle {
+            color: #6c757d;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        
+        .divider {
+            text-align: center;
+            margin: 25px 0;
+            position: relative;
+            color: #6c757d;
+            font-size: 12px;
+        }
+        
+        .divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #e0e6ed;
+            z-index: 1;
+        }
+        
+        .divider span {
+            background: white;
+            padding: 0 15px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-control {
+            background: #f8f9fa;
+            border: 1px solid #e0e6ed;
+            border-radius: 8px;
+            padding: 14px 16px;
+            font-size: 14px;
+            color: #495057;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            background: white;
+            border-color: #1e88e5;
+            box-shadow: 0 0 0 0.2rem rgba(30, 136, 229, 0.15);
+            outline: none;
+        }
+        
+        .form-control::placeholder {
+            color: #adb5bd;
+        }
+        
+        .password-wrapper {
+            position: relative;
+        }
+        
+        .password-toggle {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #adb5bd;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        
+        .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        .remember-me input[type="checkbox"] {
+            accent-color: #1e88e5;
+        }
+        
+        .forgot-password {
+            color: #1e88e5;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .forgot-password:hover {
+            color: #1565c0;
+            text-decoration: underline;
+        }
+        
+        .login-btn {
+            background: #1e88e5;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 14px;
+            width: 100%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .login-btn:hover {
+            background: #1565c0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+        }
+        
+        .signup-link {
+            text-align: center;
+            margin-top: 25px;
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        .signup-link a {
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Right Section - Table */
+        .right-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .right-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .table-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            padding: 30px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .table-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .table-title {
+            color: #2c3e50;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .table-subtitle {
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        .custom-table {
+            margin-bottom: 20px;
+        }
+        
+        .custom-table th {
+            background: #f8f9fa;
+            color: #495057;
+            font-weight: 600;
+            border: 1px solid #e0e6ed;
+            padding: 12px 16px;
+            font-size: 14px;
+        }
+        
+        .custom-table td {
+            padding: 14px 16px;
+            border: 1px solid #e0e6ed;
+            font-size: 14px;
+            color: #495057;
+        }
+        
+        .custom-table tbody tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .status-active {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .status-inactive {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .status-pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .pagination-wrapper {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .pagination-info {
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        .pagination {
+            margin: 0;
+        }
+        
+        .pagination .page-link {
+            border: 1px solid #e0e6ed;
+            color: #495057;
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+        
+        .pagination .page-link:hover {
+            background: #f8f9fa;
+            border-color: #1e88e5;
+            color: #1e88e5;
+        }
+        
+        .pagination .page-item.active .page-link {
+            background: #1e88e5;
+            border-color: #1e88e5;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .main-container {
+                flex-direction: column;
+                overflow-y: auto;
+            }
+            
+            .left-section,
+            .right-section {
+                flex: none;
+                height: auto;
+                min-height: 50vh;
+            }
+            
+            .left-section {
+                padding: 30px 20px;
+            }
+            
+            .right-section {
+                padding: 30px 20px;
+            }
+            
+            .table-container {
+                padding: 20px;
+            }
+            
+            .login-title {
+                font-size: 24px;
+            }
+            
+            .table-title {
+                font-size: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .left-section {
+                padding: 20px 15px;
+            }
+            
+            .right-section {
+                padding: 20px 15px;
+            }
+            
+            .table-container {
+                padding: 15px;
+            }
+            
+            .social-buttons {
+                flex-direction: column;
+            }
+            
+            .custom-table {
+                font-size: 12px;
+            }
+            
+            .custom-table th,
+            .custom-table td {
+                padding: 8px 12px;
+            }
+            
+            .pagination-wrapper {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .login-container {
+                max-width: 100%;
+            }
+            
+            .table-container {
+                padding: 12px;
+            }
+            
+            .custom-table th,
+            .custom-table td {
+                padding: 6px 8px;
+                font-size: 11px;
+            }
+            
+            .status-badge {
+                padding: 2px 8px;
+                font-size: 10px;
+            }
+        }
