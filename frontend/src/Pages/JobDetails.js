@@ -74,7 +74,7 @@ function JobDetails() {
     data.append('coverLetter', formData.coverLetter);
 
     try {
-      const response = await fetch('https://consulting-4rbe.onrender.com/api/jobApplications', {
+      const response = await fetch('https://consulting-main.onrender.com/api/jobApplications', {
         method: 'POST',
         body: data,
       });
