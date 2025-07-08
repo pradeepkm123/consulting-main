@@ -10,7 +10,7 @@ function IndustriesDetails() {
     const [industry, setIndustry] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const BASE_URL = 'https://consulting-4rbe.onrender.com'; // Change this for production
+    const BASE_URL = 'https://consulting-main.onrender.com'; // Change this for production
 
     useEffect(() => {
         const fetchIndustryDetails = async () => {
@@ -89,7 +89,7 @@ function IndustriesDetails() {
                                 <div className="quote">
                                     {industry.imageUrl && (
                                         <img
-                                            src={`https://consulting-4rbe.onrender.com/uploads/${industry.imageUrl.split('\\').pop()}`}
+                                            src={`https://consulting-main.onrender.com/uploads/${industry.imageUrl.split('\\').pop()}`}
                                             alt={industry.title}
                                             style={{ width: '100%', borderRadius: '15px' }}
                                         />
