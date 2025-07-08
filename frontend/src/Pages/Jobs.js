@@ -15,7 +15,7 @@ function Jobs() {
     useEffect(() => {
         const fetchJobs = async () => {
             try {
-                const response = await fetch('https://consulting-4rbe.onrender.com/api/jobs');
+                const response = await fetch('https://consulting-main.onrender.com/api/jobs');
                 if (response.ok) {
                     const data = await response.json();
                     setJobs(Array.isArray(data) ? data : []);
