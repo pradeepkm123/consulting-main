@@ -35,7 +35,7 @@ const ClientManagement = () => {
 
   const fetchClients = async () => {
     try {
-      const response = await axios.get('https://consulting-4rbe.onrender.com/api/clients');
+      const response = await axios.get('https://consulting-main.onrender.com/api/clients');
       setClients(response.data);
     } catch (error) {
       console.error('Error fetching clients:', error);
@@ -65,7 +65,7 @@ const ClientManagement = () => {
     images.forEach((image) => data.append('images', image)); // `images` should match multer field name in backend
 
     try {
-      await axios.post('https://consulting-4rbe.onrender.com/api/clients', data, {
+      await axios.post('https://consulting-main.onrender.com/api/clients', data, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -86,7 +86,7 @@ const ClientManagement = () => {
     if (!confirmDelete) return;
 
     try {
-      await axios.delete(`https://consulting-4rbe.onrender.com/api/clients/${id}`);
+      await axios.delete(`https://consulting-main.onrender.com/api/clients/${id}`);
       setClients((prev) => prev.filter((client) => client._id !== id));
       alert('Client deleted successfully!');
     } catch (error) {
@@ -191,7 +191,7 @@ const ClientManagement = () => {
                     {client.images?.map((img, i) => (
                       <img
                         key={i}
-                        src={`https://consulting-4rbe.onrender.com/${img}`}
+                        src={`https://consulting-main.onrender.com/${img}`}
                         alt={`Client ${i}`}
                         style={{ width: 50, height: 50, marginRight: 5 }}
                       />
