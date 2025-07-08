@@ -35,7 +35,7 @@ function AdminTeamUpload() {
   useEffect(() => {
     const fetchTeamMembers = async () => {
       try {
-        const response = await axios.get('https://consulting-4rbe.onrender.com/api/team');
+        const response = await axios.get('https://consulting-main.onrender.com/api/team');
         setTeamMembers(response.data);
       } catch (error) {
         console.error('Error fetching team members:', error);
@@ -73,7 +73,7 @@ function AdminTeamUpload() {
     try {
       if (teamMember._id) {
         // Update existing team member
-        await axios.put(`https://consulting-4rbe.onrender.com/api/team/${teamMember._id}`, formData, {
+        await axios.put(`https://consulting-main.onrender.com/api/team/${teamMember._id}`, formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
@@ -81,7 +81,7 @@ function AdminTeamUpload() {
         toast.success('Team member updated successfully!');
       } else {
         // Add new team member
-        await axios.post('https://consulting-4rbe.onrender.com/api/team', formData, {
+        await axios.post('https://consulting-main.onrender.com/api/team', formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
@@ -89,7 +89,7 @@ function AdminTeamUpload() {
         toast.success('Team member uploaded successfully!');
       }
       // Refresh the team members list
-      const response = await axios.get('https://consulting-4rbe.onrender.com/api/team');
+      const response = await axios.get('https://consulting-main.onrender.com/api/team');
       setTeamMembers(response.data);
       // Reset form
       setTeamMember({ _id: null, name: '', role: '', image: null });
@@ -110,7 +110,7 @@ function AdminTeamUpload() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://consulting-4rbe.onrender.com/api/team/${id}`);
+      await axios.delete(`https://consulting-main.onrender.com/api/team/${id}`);
       setTeamMembers(teamMembers.filter((member) => member._id !== id));
       toast.success('Team member deleted successfully!');
     } catch (error) {
@@ -181,7 +181,7 @@ function AdminTeamUpload() {
                 <TableCell>{member.role}</TableCell>
                 <TableCell>
                   <img
-                    src={`https://consulting-4rbe.onrender.com${member.imageUrl}`}
+                    src={`https://consulting-main.onrender.com${member.imageUrl}`}
                     alt={member.name}
                     width="50"
                   />
