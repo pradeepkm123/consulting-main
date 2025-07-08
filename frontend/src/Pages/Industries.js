@@ -10,7 +10,7 @@ import FloatingButtons from '../Components/FloatingButtons';
 function Industries() {
     const [industries, setIndustries] = useState([]);
     const [loading, setLoading] = useState(true); // Add loading state
-    const BASE_URL = 'https://consulting-4rbe.onrender.com'; // Change this for production
+    const BASE_URL = 'https://consulting-main.onrender.com'; // Change this for production
 
     const fetchIndustries = async () => {
         try {
@@ -80,7 +80,7 @@ function Industries() {
                                 <div className="single-blog-box">
                                     <div className="single-blog-thumb">
                                         <img
-                                            src={`https://consulting-4rbe.onrender.com/uploads/${industry.imageUrl}`}
+                                            src={`https://consulting-main.onrender.com/uploads/${industry.imageUrl}`}
                                             alt={industry.title}
                                             style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
                                         />
