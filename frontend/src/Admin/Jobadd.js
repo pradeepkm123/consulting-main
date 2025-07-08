@@ -20,7 +20,7 @@ function JobAdd() {
 
   const fetchJobs = async () => {
     try {
-      const response = await fetch('https://consulting-4rbe.onrender.com/api/jobs');
+      const response = await fetch('https://consulting-main.onrender.com/api/jobs');
       if (response.ok) {
         const data = await response.json();
         setJobs(Array.isArray(data) ? data : []);
@@ -36,7 +36,7 @@ function JobAdd() {
 
   const fetchJobApplications = async (jobId) => {
     try {
-      const response = await fetch(`https://consulting-4rbe.onrender.com/api/jobApplications/${jobId}`);
+      const response = await fetch(`https://consulting-main.onrender.com/api/jobApplications/${jobId}`);
       if (response.ok) {
         const data = await response.json();
         setJobApplications(Array.isArray(data) ? data : []);
@@ -63,7 +63,7 @@ function JobAdd() {
   const handleDelete = async (jobId) => {
     if (window.confirm('Are you sure you want to delete this job?')) {
       try {
-        const response = await fetch(`https://consulting-4rbe.onrender.com/api/jobs/${jobId}`, {
+        const response = await fetch(`https://consulting-main.onrender.com/api/jobs/${jobId}`, {
           method: 'DELETE',
         });
 
@@ -83,7 +83,7 @@ function JobAdd() {
   const handleDeleteApplication = async (applicationId) => {
     if (window.confirm('Are you sure you want to delete this application?')) {
       try {
-        const response = await fetch(`https://consulting-4rbe.onrender.com/api/jobApplications/${applicationId}`, {
+        const response = await fetch(`https://consulting-main.onrender.com/api/jobApplications/${applicationId}`, {
           method: 'DELETE',
         });
 
@@ -233,7 +233,7 @@ function JobAdd() {
                     <td>{application.phone}</td>
                     <td>{application.qualification}</td>
                     <td>
-                      <a target='_blank' href={`https://consulting-4rbe.onrender.com/${application.resume}`} download>
+                      <a target='_blank' href={`https://consulting-main.onrender.com/${application.resume}`} download>
                         <i className="las la-download"></i>
                       </a>
                     </td>
