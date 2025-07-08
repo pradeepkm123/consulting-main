@@ -13,7 +13,7 @@ function ServicesDetails() {
   useEffect(() => {
     const fetchService = async () => {
       try {
-        const response = await fetch(`https://consulting-4rbe.onrender.com/api/services/${id}`);
+        const response = await fetch(`https://consulting-main.onrender.com/api/services/${id}`);
         if (response.ok) {
           const data = await response.json();
           setService(data);
@@ -66,7 +66,7 @@ function ServicesDetails() {
         <div className='row'>
           <div className='col-md-6'>
             <img
-              src={`https://consulting-4rbe.onrender.com/${service.imageUrl}`}
+              src={`https://consulting-main.onrender.com/${service.imageUrl}`}
               alt={service.title}
               style={{ width: '100%', borderRadius: '10px' }}
             />
