@@ -60,17 +60,7 @@ function Footer() {
                   <h4>Contact</h4>
                 </div>
 
-                <div className="footer-widget-address style_two">
-                  <div className="footer_widget_icon style_upper">
-                    <i className="las la-map-marker-alt" style={{ fontSize: '15px' }}></i>
-                  </div>
-                  <div className="footer-widget-address_text">
-                    <p>Our address:</p>
-                    <span>
-                      Old Westbury 256, New York 11201, United States
-                    </span>
-                  </div>
-                </div>
+                
 
                 <div className="footer-widget-address">
                   <div className="footer_widget_icon">
