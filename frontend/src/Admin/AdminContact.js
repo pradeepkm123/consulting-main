@@ -7,7 +7,7 @@ function AdminContact() {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const res = await fetch('https://consulting-4rbe.onrender.com/api/contact');
+        const res = await fetch('https://consulting-main.onrender.com/api/contact');
 
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);
@@ -26,7 +26,7 @@ function AdminContact() {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`https://consulting-4rbe.onrender.com/api/contact/${id}`, {
+      const response = await fetch(`https://consulting-main.onrender.com/api/contact/${id}`, {
         method: 'DELETE',
       });
 
