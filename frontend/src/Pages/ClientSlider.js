@@ -11,7 +11,7 @@ const ClientSlider = () => {
   useEffect(() => {
     const fetchClients = async () => {
       try {
-        const response = await axios.get('https://consulting-4rbe.onrender.com/api/clients');
+        const response = await axios.get('https://consulting-main.onrender.com/api/clients');
         setClients(response.data);
       } catch (error) {
         console.error('Error fetching clients:', error);
@@ -76,7 +76,7 @@ const ClientSlider = () => {
                 client.images.map((image, index) => (
                   <div className="client-slide" key={`${client._id}-${index}`}>
                     <div className="client-image">
-                      <img src={`https://consulting-4rbe.onrender.com/${image}`} alt={`Client ${client.name}`} style={{width:'200px'}} />
+                      <img src={`https://consulting-main.onrender.com/${image}`} alt={`Client ${client.name}`} style={{width:'200px'}} />
                     </div>
                   </div>
                 ))
