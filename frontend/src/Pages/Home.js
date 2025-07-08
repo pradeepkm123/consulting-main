@@ -43,7 +43,7 @@ function Home() {
 
         const fetchCounterData = async () => {
             try {
-                const response = await axios.get('https://consulting-4rbe.onrender.com/api/counter');
+                const response = await axios.get('https://consulting-main.onrender.com/api/counter');
                 setCounterData(response.data);
             } catch (error) {
                 console.error('Error fetching counter data:', error);
@@ -52,7 +52,7 @@ function Home() {
 
         const fetchServices = async () => {
             try {
-                const response = await axios.get('https://consulting-4rbe.onrender.com/api/services');
+                const response = await axios.get('https://consulting-main.onrender.com/api/services');
                 setServices(Array.isArray(response.data) ? response.data : []);
             } catch (error) {
                 console.error('Error fetching services:', error);
@@ -63,7 +63,7 @@ function Home() {
 
         const fetchBlogs = async () => {
             try {
-                const response = await axios.get('https://consulting-4rbe.onrender.com/api/blogs');
+                const response = await axios.get('https://consulting-main.onrender.com/api/blogs');
                 setBlogs(Array.isArray(response.data) ? response.data : []);
             } catch (error) {
                 console.error('Error fetching blogs:', error);
@@ -306,7 +306,7 @@ function Home() {
                                         <div className="service_single_item">
                                             <div className="service_thumb">
                                                 <img
-                                                    src={`https://consulting-4rbe.onrender.com/${service.imageUrl}`}
+                                                    src={`https://consulting-main.onrender.com/${service.imageUrl}`}
                                                     alt={service.title}
                                                     style={{ width: '100%', borderRadius: '10px' }}
                                                 />
@@ -410,7 +410,7 @@ function Home() {
                                     <div key={blog._id} className="col-lg-12">
                                         <div className="case-study-single-box">
                                             <div className="case-study-thumb">
-                                                <img src={`https://consulting-4rbe.onrender.com/${blog.imageUrl}`} alt={blog.title} />
+                                                <img src={`https://consulting-main.onrender.com/${blog.imageUrl}`} alt={blog.title} />
                                                 <div className="single_portfolio_icon">
                                                     <a href={`/blog/${blog._id}`}><i className="las la-arrow-right"></i></a>
                                                 </div>
