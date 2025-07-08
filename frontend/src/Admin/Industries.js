@@ -11,7 +11,7 @@ function Industries() {
     const [industriesPerPage] = useState(10);
     const [selectedIndustry, setSelectedIndustry] = useState(null);
 
-    const BASE_URL = 'https://consulting-4rbe.onrender.com'; // Change this for production
+    const BASE_URL = 'https://consulting-main.onrender.com'; // Change this for production
 
     const toggleDrawer = () => {
         setIsDrawerOpen(!isDrawerOpen);
@@ -111,7 +111,7 @@ function Industries() {
                                     <td>{industry.title}</td>
                                     <td>
                                         {industry.imageUrl ? (
-                                            <img src={`https://consulting-4rbe.onrender.com/uploads/${industry.imageUrl}`} alt={industry.title} width={100} />
+                                            <img src={`https://consulting-main.onrender.com/uploads/${industry.imageUrl}`} alt={industry.title} width={100} />
                                         ) : (
                                             <span>No Image</span>
                                         )}
