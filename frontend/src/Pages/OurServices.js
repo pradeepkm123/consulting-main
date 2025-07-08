@@ -12,7 +12,7 @@ function OurServices() {
     useEffect(() => {
         const fetchServices = async () => {
             try {
-                const response = await fetch('https://consulting-4rbe.onrender.com/api/services');
+                const response = await fetch('https://consulting-main.onrender.com/api/services');
                 if (response.ok) {
                     const data = await response.json();
                     setServices(Array.isArray(data) ? data : []);
@@ -70,7 +70,7 @@ function OurServices() {
                                     <div className={`feature_item ${index % 2 === 1 ? 'upper' : ''}`} style={{ padding: '20px 20px 20px 20px' }}>
                                         <div className="feature_icon">
                                             <img
-                                                src={`https://consulting-4rbe.onrender.com/${service.imageUrl || service.imageUrl}`}
+                                                src={`https://consulting-main.onrender.com/${service.imageUrl || service.imageUrl}`}
                                                 alt={service.title}
                                                 style={{ width: '100%', borderRadius: '10px' }}
                                             />
