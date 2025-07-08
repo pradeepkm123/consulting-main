@@ -9,7 +9,7 @@ function SubmittedResumes() {
   useEffect(() => {
     const fetchResumes = async () => {
       try {
-        const response = await axios.get('https://consulting-4rbe.onrender.com/api/resumes');
+        const response = await axios.get('https://consulting-main.onrender.com/api/resumes');
         setResumes(response.data);
       } catch (error) {
         toast.error('Error fetching resumes');
@@ -22,7 +22,7 @@ function SubmittedResumes() {
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this resume?')) {
       try {
-        await axios.delete(`https://consulting-4rbe.onrender.com/api/resumes/${id}`);
+        await axios.delete(`https://consulting-main.onrender.com/api/resumes/${id}`);
         setResumes(resumes.filter(resume => resume._id !== id));
         toast.success('Resume deleted successfully!');
       } catch (error) {
@@ -55,11 +55,11 @@ function SubmittedResumes() {
                 <td>{resume.phone}</td>
                 <td>{resume.qualification}</td>
                 <td>
-                  <a href={`https://consulting-4rbe.onrender.com/${resume.resumePath}`} target="_blank" rel="noopener noreferrer">View Resume</a>
+                  <a href={`https://consulting-main.onrender.com/${resume.resumePath}`} target="_blank" rel="noopener noreferrer">View Resume</a>
                 </td>
                 <td>
                   {resume.coverLetterPath ? (
-                    <a href={`https://consulting-4rbe.onrender.com/${resume.coverLetterPath}`} target="_blank" rel="noopener noreferrer">View Cover Letter</a>
+                    <a href={`https://consulting-main.onrender.com/${resume.coverLetterPath}`} target="_blank" rel="noopener noreferrer">View Cover Letter</a>
                   ) : (
                     'No Cover Letter'
                   )}
