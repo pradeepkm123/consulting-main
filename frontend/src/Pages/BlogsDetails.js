@@ -13,7 +13,7 @@ function BlogsDetails() {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await fetch(`https://consulting-4rbe.onrender.com/api/blogs/${id}`);
+        const response = await fetch(`https://consulting-main.onrender.com/api/blogs/${id}`);
         if (response.ok) {
           const data = await response.json();
           setBlog(data);
@@ -81,7 +81,7 @@ function BlogsDetails() {
                 <div className="row pt-32">
                   <div className="col-lg-12 col-md-6">
                     <div className="port_details_thumb">
-                      <img src={`https://consulting-4rbe.onrender.com/${blog.imageUrl}`} alt={blog.title} style={{ width: '100%' }} />
+                      <img src={`https://consulting-main.onrender.com/${blog.imageUrl}`} alt={blog.title} style={{ width: '100%' }} />
                     </div>
                   </div>
                 </div>
