@@ -19,7 +19,7 @@ function Register() {
   }, []);
 
   const fetchUsers = async () => {
-    const response = await fetch('https://consulting-4rbe.onrender.com/api/auth/users');
+    const response = await fetch('https://consulting-main.onrender.com/api/auth/users');
     const data = await response.json();
     setUsers(data);
   };
@@ -64,7 +64,7 @@ function Register() {
     e.preventDefault();
     if (validateForm()) {
       try {
-        const response = await fetch('https://consulting-4rbe.onrender.com/api/auth/register', {
+        const response = await fetch('https://consulting-main.onrender.com/api/auth/register', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -93,7 +93,7 @@ function Register() {
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this user?')) {
       try {
-        const response = await fetch(`https://consulting-4rbe.onrender.com/api/auth/users/${id}`, {
+        const response = await fetch(`https://consulting-main.onrender.com/api/auth/users/${id}`, {
           method: 'DELETE',
         });
         if (response.ok) {
