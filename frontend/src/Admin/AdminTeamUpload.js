@@ -35,7 +35,7 @@ function AdminTeamUpload() {
   useEffect(() => {
     const fetchTeamMembers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/team');
+        const response = await axios.get('https://consulting-4rbe.onrender.com/api/team');
         setTeamMembers(response.data);
       } catch (error) {
         console.error('Error fetching team members:', error);
