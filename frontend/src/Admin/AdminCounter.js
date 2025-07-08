@@ -12,7 +12,7 @@ const AdminCounter = () => {
   useEffect(() => {
     const fetchCounterData = async () => {
       try {
-        const response = await axios.get('https://consulting-4rbe.onrender.com/api/counter');
+        const response = await axios.get('https://consulting-main.onrender.com/api/counter');
         setCounterData(response.data);
       } catch (error) {
         console.error('Error fetching counter data:', error);
@@ -33,7 +33,7 @@ const AdminCounter = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://consulting-4rbe.onrender.com/api/counter', counterData);
+      await axios.post('https://consulting-main.onrender.com/api/counter', counterData);
       alert('Counter data updated successfully!');
     } catch (error) {
       console.error('Error updating counter data:', error);
