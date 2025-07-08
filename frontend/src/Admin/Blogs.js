@@ -19,7 +19,7 @@ function Blogs() {
 
   const fetchBlogs = async () => {
     try {
-      const response = await fetch('https://consulting-4rbe.onrender.com/api/blogs');
+      const response = await fetch('https://consulting-main.onrender.com/api/blogs');
       if (response.ok) {
         const data = await response.json();
         setBlogs(Array.isArray(data) ? data : []);
@@ -35,7 +35,7 @@ function Blogs() {
 
   const fetchBlogComments = async (blogId) => {
     try {
-      const response = await fetch(`https://consulting-4rbe.onrender.com/api/blogComments/${blogId}`);
+      const response = await fetch(`https://consulting-main.onrender.com/api/blogComments/${blogId}`);
       if (response.ok) {
         const data = await response.json();
         setBlogComments(Array.isArray(data) ? data : []);
@@ -62,7 +62,7 @@ function Blogs() {
   const handleDelete = async (blogId) => {
     if (window.confirm('Are you sure you want to delete this blog?')) {
       try {
-        const response = await fetch(`https://consulting-4rbe.onrender.com/api/blogs/${blogId}`, {
+        const response = await fetch(`https://consulting-main.onrender.com/api/blogs/${blogId}`, {
           method: 'DELETE',
         });
 
@@ -82,7 +82,7 @@ function Blogs() {
   const handleDeleteComment = async (commentId) => {
     if (window.confirm('Are you sure you want to delete this comment?')) {
       try {
-        const response = await fetch(`https://consulting-4rbe.onrender.com/api/blogComments/${commentId}`, {
+        const response = await fetch(`https://consulting-main.onrender.com/api/blogComments/${commentId}`, {
           method: 'DELETE',
         });
 
@@ -141,7 +141,7 @@ function Blogs() {
                   <td>
                     {blog.imageUrl ? (
                       <img
-                        src={`https://consulting-4rbe.onrender.com/${blog.imageUrl}`}
+                        src={`https://consulting-main.onrender.com/${blog.imageUrl}`}
                         alt={blog.title}
                         style={{ width: '100px', height: 'auto' }}
                       />
