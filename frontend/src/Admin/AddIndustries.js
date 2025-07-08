@@ -78,8 +78,8 @@ function AddIndustries({ isOpen, toggleDrawer, onIndustrySubmit, industry }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const endpoint = industry
-      ? `https://consulting-4rbe.onrender.com/api/industries/${industry._id}`
-      : 'https://consulting-4rbe.onrender.com/api/industries';
+      ? `https://consulting-main.onrender.com/api/industries/${industry._id}`
+      : 'https://consulting-main.onrender.com/api/industries';
     const method = industry ? 'PUT' : 'POST';
     const form = new FormData();
     form.append('title', formData.title);
