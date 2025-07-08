@@ -12,7 +12,7 @@ function Team() {
   useEffect(() => {
     const fetchTeamMembers = async () => {
       try {
-        const response = await axios.get('https://consulting-4rbe.onrender.com/api/team');
+        const response = await axios.get('https://consulting-main.onrender.com/api/team');
         setTeamMembers(response.data);
       } catch (error) {
         console.error('Error fetching team members:', error);
@@ -69,7 +69,7 @@ function Team() {
               <div key={member._id} className="col-lg-4 col-md-6">
                 <div className="single-team_item style_three">
                   <div className="team_thumb">
-                    <img src={`https://consulting-4rbe.onrender.com${member.imageUrl}`} alt={member.name} />
+                    <img src={`https://consulting-main.onrender.com${member.imageUrl}`} alt={member.name} />
                   </div>
                   <div className="team-content">
                     <h3><a href="#">{member.name}</a></h3>
