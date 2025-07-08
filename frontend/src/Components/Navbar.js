@@ -26,7 +26,7 @@ function Navbar() {
 
     const fetchUsers = async () => {
         try {
-            const response = await fetch('https://consulting-4rbe.onrender.com/api/auth/users');
+            const response = await fetch('https://consulting-main.onrender.com/api/auth/users');
             const data = await response.json();
             setUsers(data);
         } catch (error) {
