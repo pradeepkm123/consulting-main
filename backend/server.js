@@ -122,7 +122,10 @@ if (!fs.existsSync(uploadDir)) {
 }
 
 // ✅ Serve /uploads as static files
-app.use('/uploads', express.static(uploadDir));
+// app.use('/uploads', express.static(uploadDir));
+
+app.use('/uploads', express.static('uploads'));
+
 
 // ✅ If you have a public folder (like for HTML or other assets), you can keep this:
 app.use('/public', express.static('public'));
