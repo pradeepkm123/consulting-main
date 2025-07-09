@@ -102,16 +102,11 @@ function Service() {
                   <td>{service.title}</td>
                   <td>
                     {service.imageUrl && (
-                      // <img
-                      //   src={`https://consulting-main.onrender.com/${service.imageUrl}`}
-                      //   alt={service.title}
-                      //   style={{ width: '100px', height: 'auto' }}
-                      // />
-                       <img
-      src={service.imageUrl}
-      alt={service.title}
-      style={{ width: '100px', height: 'auto' }}
-    />
+                      <img
+                        src={`https://consulting-main.onrender.com/${service.imageUrl}`}
+                        alt={service.title}
+                        style={{ width: '100px', height: 'auto' }}
+                      />
                     )}
                   </td>
                   <td>
