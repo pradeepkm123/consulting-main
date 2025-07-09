@@ -70,7 +70,7 @@ function OurServices() {
                                     <div className={`feature_item ${index % 2 === 1 ? 'upper' : ''}`} style={{ padding: '20px 20px 20px 20px' }}>
                                         <div className="feature_icon">
                                             <img
-                                                src={`https://consulting-main.onrender.com/${service.imageUrl || service.imageUrl}`}
+                                                src={`https://consulting-main.onrender.com/${service.imageUrl}`}
                                                 alt={service.title}
                                                 style={{ width: '100%', borderRadius: '10px' }}
                                             />
