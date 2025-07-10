@@ -96,14 +96,9 @@ function About() {
                         <div className="col-lg-6 col-md-12">
                             <div className="section_title">
                                 <h4> About Us</h4>
-                                <h1>The Best Finance Consulting</h1>
-                                <h1>In Town Since 2007</h1>
-                                <p>Globally engage cross-media leadership skills before cross-media innovation
-                                    develop standardized platforms without robust applications. Conveniently
-                                    go forward collaboration and idea-sharing</p>
-                                <p>Globally engage cross-media leadership skills before cross-media innovation
-                                    develop standardized platforms without robust applications. Conveniently
-                                    go forward collaboration and idea-sharing</p>
+                                <h1>Who we are?</h1>
+                                <p>At Future Solution, we are driven by a single mission — to deliver innovative, future-ready solutions that empower individuals, businesses, and communities to thrive in a rapidly evolving world.</p>
+                                <p>Founded with a vision to redefine possibilities, we bring together deep industry knowledge, cutting-edge technology, and a passion for excellence. Whether it's consulting, digital transformation, talent solutions, or technology integration, our team is committed to providing end-to-end services that create real value for our clients.</p>
                             </div>
                         </div>
                     </div>
@@ -117,9 +112,7 @@ function About() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="section_title text-center">
-                                <h4>OUR WORKING STEPS</h4>
-                                <h1>Engaging Consulting's exceptional </h1>
-                                <h1>Involves a series of Steps</h1>
+                                <h4>Our Vision & Mission</h4>
                             </div>
                         </div>
                     </div>
@@ -131,10 +124,8 @@ function About() {
                                 </div>
                                 <h3 className="steps_number">01</h3>
                                 <div className="steps-content">
-                                    <h3>Strategic Work Planning</h3>
-                                    <p>Completely implement globals without
-                                        impactful markets in conveniently done
-                                        innovate customer directed</p>
+                                    <h3>Our Vision</h3>
+                                    <p>Providing revolutionary and bespoke talent solutions that extend beyond conventional hiring, keeping our clients and candidates leading edge on industry breakthroughs and advancements in technology.</p>
                                 </div>
                             </div>
                         </div>
@@ -159,10 +150,8 @@ function About() {
                                 </div>
                                 <h3 className="steps_number">03</h3>
                                 <div className="steps-content">
-                                    <h3>Completed Works</h3>
-                                    <p>Completely implement globals without
-                                        impactful markets in conveniently done
-                                        innovate customer directed</p>
+                                    <h3>Mission</h3>
+                                    <p>Enhancing recruitment processes through technological means in order to ensure efficiency, honesty, and a satisfying experience for both the client and candidate.</p>
                                 </div>
                             </div>
                         </div>
