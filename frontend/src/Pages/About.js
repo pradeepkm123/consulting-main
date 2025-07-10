@@ -117,7 +117,7 @@ function About() {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-lg-4 col-md-6">
+                        <div className="col-lg-6 col-md-6">
                             <div className="steps-single-item">
                                 <div className="steps_icon">
                                     <img src="https://html.tf.dreamitsolution.net/consalt/assets/images/home_one/steps_1.png" alt="Step 1" />
@@ -129,7 +129,7 @@ function About() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6">
+                        <div className="col-lg-6 col-md-6">
                             <div className="steps-single-item">
                                 <div className="steps_icon">
                                     <img src="https://html.tf.dreamitsolution.net/consalt/assets/images/home_one/steps_2.png" alt="Step 2" />
@@ -140,18 +140,6 @@ function About() {
                                     <p>Completely implement globals without
                                         impactful markets in conveniently done
                                         innovate customer directed</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6">
-                            <div className="steps-single-item">
-                                <div className="steps_icon">
-                                    <img src="https://html.tf.dreamitsolution.net/consalt/assets/images/home_one/steps_3.png" alt="Step 3" />
-                                </div>
-                                <h3 className="steps_number">03</h3>
-                                <div className="steps-content">
-                                    <h3>Mission</h3>
-                                    <p>Enhancing recruitment processes through technological means in order to ensure efficiency, honesty, and a satisfying experience for both the client and candidate.</p>
                                 </div>
                             </div>
                         </div>
