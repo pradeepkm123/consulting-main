@@ -219,8 +219,8 @@ function Home() {
                                     <div className="slider_info">
                                         <span>
                                             <i className="las la-envelope" style={{ fontSize: '20px' }}></i>
-                                            <a href="mailto:info@hrconsulting.com" style={{ marginLeft: '5px', textDecoration: 'none', color: 'inherit' }}>
-                                                Mail To: info@hrconsulting.com
+                                            <a href="mailto:hr@futuresolutionsco.com" style={{ marginLeft: '5px', textDecoration: 'none', color: 'inherit' }}>
+                                                Mail To: hr@futuresolutionsco.com
                                             </a>
                                         </span>
                                     </div>
