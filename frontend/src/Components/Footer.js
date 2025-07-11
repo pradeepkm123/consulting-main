@@ -78,8 +78,8 @@ function Footer() {
                     <i className="las la-envelope-open" style={{ fontSize: '15px' }}></i>
                   </div>
                   <div className="footer-widget-address_text">
-                    <a href="mailto:info@hrconsulting.com" style={{ textDecoration: 'none', color: '#fff' }}>
-                      info@hrconsulting.com
+                    <a href="mailto:hr@futuresolutionsco.com" style={{ textDecoration: 'none', color: '#fff' }}>
+                      hr@futuresolutionsco.com
                     </a>
                   </div>
                 </div>
