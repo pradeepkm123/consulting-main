@@ -69,11 +69,6 @@ function OurServices() {
                                 <div key={service._id} className="col-lg-3 col-md-6">
                                     <div className={`feature_item ${index % 2 === 1 ? 'upper' : ''}`} style={{ padding: '20px 20px 20px 20px' }}>
                                         <div className="feature_icon">
-                                            // <img
-                                            //     src={`https://consulting-main.onrender.com/${service.imageUrl}`}
-                                            //     alt={service.title}
-                                            //     style={{ width: '100%', borderRadius: '10px' }}
-                                            // />
       <img
       src={service.imageUrl}
       alt={service.title}
