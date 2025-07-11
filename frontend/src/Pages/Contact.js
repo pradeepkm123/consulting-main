@@ -82,9 +82,6 @@ function Contact() {
             <div className="col-lg-6">
               <div className="section_title">
                 <h4>GET IN TOUCH</h4>
-                <h1>Trusted By the Genius</h1>
-                <h1>People with Consalt</h1>
-                <p>Media leadership skills before cross-media innovation main technology develop standardized platforms without consalt.</p>
               </div>
               <div className="contact_main_info">
                 <div className="call-do-action-info">
