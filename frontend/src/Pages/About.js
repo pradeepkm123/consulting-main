@@ -55,7 +55,7 @@ function About() {
             <Navbar />
 
             {/* Breadcrumb Section */}
-            <div className="breadcumb-area d-flex">
+            <div className="breadcumb-area d-flex mt-3">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-12 text-center">
