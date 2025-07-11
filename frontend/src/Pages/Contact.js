@@ -99,7 +99,7 @@ function Contact() {
                   </div>
                   <div className="call_info">
                     <p>Call us Anytime</p>
-                    <h3>example@gmail.com</h3>
+                    <h3>hr@futuresolutionsco.com</h3>
                   </div>
                 </div>
                 <div className="call-do-action-info">
