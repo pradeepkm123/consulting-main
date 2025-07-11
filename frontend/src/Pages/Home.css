@@ -67,3 +67,27 @@ section.hero_area{
 .mean-container .mean-bar{
     background: #053131 !important;
 }
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 15px;
+  border: none;
+  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+}
+
+.faq-answer.open {
+  max-height: 300px;
+  opacity: 1;
+  padding: 24px 42px 33px 40px;
+  background: #fff;
+  filter: drop-shadow(0px 10px 40px rgba(12, 110, 109, 0.1));
+  border: 1px solid #eee;
+  border-top: none;
+}
+
+.faq-answer p {
+  font-size: 16px;
+  color: #6b7a7a;
+  margin: 0;
+}
