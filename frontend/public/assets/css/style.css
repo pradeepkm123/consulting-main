@@ -7209,13 +7209,10 @@ section.faq_area {
 
 }
 .accordion li p {
-    display: none;
-    font-size: 16px;
+	font-size: 16px;
     color: #6b7a7a;
-    padding: 24px 42px 33px 40px;
     margin: 0;
     filter: drop-shadow(0px 10px 40px rgba(12,110,109,0.1)) !important;
-    background: #fff;
 }
 a.active {
     color: #063232 !important;
