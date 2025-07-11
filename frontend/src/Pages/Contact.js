@@ -102,15 +102,6 @@ function Contact() {
                     <h3>hr@futuresolutionsco.com</h3>
                   </div>
                 </div>
-                // <div className="call-do-action-info">
-                //   <div className="call-do-social_icon">
-                //     <i className="las la-map-marker-alt"></i>
-                //   </div>
-                //   <div className="call_info">
-                //     <p>Our Locations</p>
-                //     <span>102/B Soltek New Elephant Road <br />California, USA</span>
-                //   </div>
-                // </div>
               </div>
             </div>
             <div className="col-lg-6">
