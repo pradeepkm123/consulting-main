@@ -88,12 +88,6 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const path = require('path');
 const fs = require('fs');
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-
-// Get __dirname equivalent
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 // Route Imports
 const jobRoutes = require('./routes/jobRoutes');
