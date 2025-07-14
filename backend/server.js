@@ -127,6 +127,9 @@ if (!fs.existsSync(uploadDir)) {
 app.use('/uploads', express.static('uploads'));
 
 
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+
 // ✅ If you have a public folder (like for HTML or other assets), you can keep this:
 app.use('/public', express.static('public'));
 
