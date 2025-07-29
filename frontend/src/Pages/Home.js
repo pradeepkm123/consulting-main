@@ -306,7 +306,7 @@ function Home() {
                                         <div className="service_single_item">
                                             <div className="service_thumb">
                                                 <img
-                                                    src={`https://consulting-main.onrender.com/${service.imageUrl}`}
+                                                    src={`https://consulting-main.onrender.com/uploads/${service.imageUrl}`}
                                                     alt={service.title}
                                                     style={{ width: '100%', borderRadius: '10px' }}
                                                 />
@@ -410,7 +410,7 @@ function Home() {
                                     <div key={blog._id} className="col-lg-12">
                                         <div className="case-study-single-box">
                                             <div className="case-study-thumb">
-                                                <img src={`https://consulting-main.onrender.com/${blog.imageUrl}`} alt={blog.title} />
+                                                <img src={`https://consulting-main.onrender.com/uploads/${blog.imageUrl}`} alt={blog.title} />
                                                 <div className="single_portfolio_icon">
                                                     <a href={`/blog/${blog._id}`}><i className="las la-arrow-right"></i></a>
                                                 </div>
