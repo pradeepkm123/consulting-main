@@ -69,7 +69,7 @@ function Team() {
               <div key={member._id} className="col-lg-4 col-md-6">
                 <div className="single-team_item style_three">
                   <div className="team_thumb">
-                    <img src={`https://consulting-main.onrender.com${member.imageUrl}`} alt={member.name} />
+                    <img src={`https://consulting-main.onrender.com/uploads${member.imageUrl}`} alt={member.name} />
                   </div>
                   <div className="team-content">
                     <h3><a href="#">{member.name}</a></h3>
