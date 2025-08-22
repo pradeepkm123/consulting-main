@@ -18,6 +18,7 @@ const authRoutes = require('./routes/authRoutes');
 const teamRoutes = require('./routes/teamRoutes');
 const counterRoutes = require('./routes/counterRoutes');
 const clientRoutes = require('./routes/clientRoutes');
+const uploadRoutes = require('./routes/uploadRoutes');
 
 dotenv.config(); // Load environment variables
 
@@ -82,6 +83,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api', teamRoutes);
 app.use('/api/counter', counterRoutes);
 app.use('/api/clients', clientRoutes);
+app.use('/api', uploadRoutes);
 
 // =======================
 // Start Server
